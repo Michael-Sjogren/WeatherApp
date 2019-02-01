@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 3rem;
+    letter-spacing: .25rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+h4 {
+    font-size: 1.6rem;
+}
+html , body  {
+    width: 100%;
+    height: 100vh;
+    font-size: 18px;
+}
+body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(45deg , #1e2bdad3 , #3191dffa );
+    font-family:  sans-serif;
+    color: #fcecec;
+}
+
+
+.location   {
+    width: 50%;;
+    height: 30vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.temprature {
+    flex-direction: column;
+}
+#precipType-icon {
+    align-self: baseline;
+}
+#temprature-degree {
+    color: #ffffff;
+}
+
+#temprature-description {
+    margin-top: 20px;
+}
+#degree-section {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+#degree-symbol {
+    font-style: italic;
+    position: relative;
+    margin: 10px;
+    font-size: 2.5rem;
+}
+
+#degree-symbol::after {
+    position: absolute;
+    top: -.5rem;
+    font-weight: 600;
+    content: "\00b0";
+} 
